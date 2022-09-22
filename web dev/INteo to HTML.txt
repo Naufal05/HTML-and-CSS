@@ -1,0 +1,225 @@
+1. intro with HTML
+	Web dev
+	Front and Back technologies
+	Web page working
+	tnro to HTML
+	Concept - HTML elements and tags.
+	HTML attribute.
+	BAsic structure of HTML
+	  - head
+	  - body
+	  - title
+	Basic tags used in HTML
+
+
+*****Web Development*******
+It is a project accesbile through internet.
+This project is made up of FE, BE and Database.
+
+Interface - is Front end or GUI.
+code = logic + Data
+Logic as backend
+Data - Database
+
+eg: Bank ATM's
+
+FRONT END TECHNOLOGY
+ 
+ Markup language is used to build the interface
+ The most widely used markup language is called as
+ HTML.
+ HTML is very static in nature.
+
+Static -> there is no communication between the user
+ 	and the web project.
+
+Dynamic -> there is communication b/w user and the web project.
+
+Inorder to make it more dynamic, Javascript was introcued.
+
+CSS - was introduced to add styles.
+ CSS framewroks :
+	Bootstrap, Tailwind, MAterial UI etc.
+
+	Initially JS was tilted towards procedure oriented language (less featured),
+ but later 2005, js was tilted towards object orinted language (more featured).
+ Complex dynamic websites was possible.
+
+After 2005, developers started to creats library, a slection of process
+which performs specific tsks for reusing them.
+
+Libraries eg: Ajax, jquery etc
+
+More ibraries were created, these libs are combined,
+and they are called as frameworks.
+	-Anugular
+	-React
+	-Vue
+	etc......
+
+
+BACK END TECHNOLGIES
+  
+  To create a logic you need a programming language.
+Before 2005, java, python, .NET, PHP etc.
+Since 2005 Javascript also started.
+
+ Java -> Springboot(framweok)
+ Python-> Django, flask 
+ PHP-> Laravel, Codeignitor
+ Javacript -> Nodejs
+ 
+ Nodejs -> 
+	
+Google made V8 engine Open source. This is Google Chrome Browers Javascript compiler.
+
+ECMA - European Computer Manufacturing Association
+     - ECMA script based on which our brower will support.
+     - JS is dervied from ECMA script
+
+All the browers in the entire world support JS. But to support this
+the brower should have a compiler
+
+JS compiler (V8 egniner)+ Add some libraries = Noedjs 
+
+Nodejs - is a runtime environment which is used to exectute JS.
+
+  Express JS -> framework used on top of Nodejs.
+  eg: 10 lines in Nodejs and 3 lines in expressjs
+
+MERN 
+ -mongodb/mysql express react Nodejs
+
+ REact - VDOM
+  -> react is actually a library,but it has the power to convert itself inot a framework by addign libraries together.
+
+MEAN 
+ - Mysql and mongodb
+ - ExpressJS
+ - Angular - uses MVM, Typescript
+ - Nodejs
+
+Promise feature is used to overcome the single thread issue.
+Promise is an asynchronous 
+
+DATABASES
+- SQL bases
+   - Relational DB
+   - Table like structure
+   eg: sql, oracle db, mariadb, mysql etc....
+- NoSQL
+   - Document Like structure
+   - Non Relational Db
+   eg: MongoDB, Cassandra, etc...
+
+
+HOW DOES WEB DEVELOPMENT WORKS?
+
+- User - Browser - Front End
+  Client 
+- Server - Backend + Database
+
+ Request and Response
+
+Evolution of Internet:
+ - 1960's - US Army - had military bases all over the world, 
+   they wanted to communicate with the bases. For that they
+   connected all these bases together, this create a private network.
+   Netowkr is the collection of nodes.
+
+ - in 1980's - Insurance companies /banks/ Educational institutions
+	all these branches were created.
+
+-  In 1990's - a new n/w was created which was public in nature
+   called as INTERNET.
+   PRotocol - It is a chaneel created between the sender
+              and receiverto pass the messages.
+	- HTTP protocol - Hyper Text Transfer Protocol
+		request -> HTTP message
+		response-> HTML document.
+
+
+INTRODUCTION TO HTML
+
+- Hyper Text MArkup Language - Frontend markup lang to create static documents.
+
+Tags: 
+ - is a basic unit of HTML.
+  eg: <p>, <h1> etc...
+
+Element: 
+ - element is collection of 3 important units, namely:
+	1. Opening tag
+	2. closing tag
+	3. Content
+  eg: <p> content </p>
+
+HTML Basic structure
+
+HTML Attributes
+ - are used to manipulate the properties of a HTML element.
+ - should be enclosed inside the opening tag of the element.
+
+Basic Tags used in HTML :
+-p
+-h1, h2 h3 h4 h5 and h6
+
+=====================================================
+HTML -ll
+===================================================
+Agenda :
+1. HTML Tables
+2. HTML Forms
+3. Semantic HTML
+
+HTML is the primary building block. IT creates
+a structure for you.
+
+SGML - Standard General Markup Language.
+SGML (standard generalized markup language) is an international standard 
+for the definition of markup languages; that is, it is a metalanguage. 
+Markup consists of notations called tags that specify the function of 
+a piece of text or how it is to be displayed.
+
+What is property?
+Diff b/w attributes and property ?
+
+* HTML Tables
+
+-<table> </table> -> table element
+-<thrad> </thead>
+-<tr> </tr> - table rows
+- <th> </th> - Heading
+-<td> </td> - table data
+
+Every browser is having its own style sheet.
+	
+td - 
+
+rowspan and colspan - help to manage the spacing that is available in
+			current table structure.
+
+Cellspacing* and Cellpadding* - these are the basic attribute.
+
+(check the datatablejs.com to learn more about tables).
+
+---------------
+HTML Forms
+---------------
+help us to capture the data from the user input from any time.
+
+Validation of the form is the backbone.
+
+Form is a container tag - <form> </form>
+
+	<form name="Registration Form" action="" method="get">
+		<input name="fname" type="text" />
+		<input type="text" name="lname" />
+	//action is sort of the attribute that keeps
+	the information of the url page of the server
+	which will receive the information of th form 
+	and process it.
+	//method
+
+	</form>
+
