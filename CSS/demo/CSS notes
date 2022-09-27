@@ -1,0 +1,209 @@
+\***\*\*\*\*\*** CSS \***\*\*\*\*\***
+
+User Experience
+
+CSS Rules:
+Has 2 parts:
+
+1. Selector
+2. Declaration {font-family:Arial}
+
+USe codesandbox.io
+
+CSS Selectors:
+
+- Universal Selector
+
+  - {
+    }
+
+- Type Selector
+  p {
+  color:red;
+  }
+
+1. Inline styling
+2. Internal Styling
+3. External Styling
+   link
+   <link href: "style.css" rel="stylesheet">
+
+   href - hypertext reference - used for navigation
+   href is a 2 way link.
+   incase of src, used to attached the JS file into the HTML page.
+
+Types of Selectors:
+
+1. Element
+   In element selector will use the HTML element
+2. Attribute
+   We gone a declare a attribute in the HTML element
+   and then we are going to use this attribute to link the CSS declaration.
+   There 2 types :
+
+   1. Id selector- we define an id and we link the id and the css
+      using the # symbol.
+      Id is unique
+   2. Class Selector\*
+      we define an class and we link the id and the css
+      using the . symbol
+      class implemented for multiple elements.
+
+3. Child
+   <body>
+   <p>Gello</p>
+   <h1>heading</h1>
+   </body>
+
+   body p{ propety_name:value for the property}
+   //parent child {prpnameL value}
+
+4. Group
+ <body>
+<p>Gello</p>
+<h1>heading</h1>
+ </body>
+let for both p and hi same property
+p,h1 {propety_name: value }
+5. Universal
+   - {prop_name: Value}
+     all the html tag
+6. Pseudo
+   p:hover {
+   background-color: lime;
+   }
+
+Inline will take precedence over internal and external.
+
+./ -> means parent folder
+././ ->to folder
+././folderA/index.css
+
+or
+
+../fodlerA/ndex.css
+
+###CSS colors##
+
+difrerent approaches to implement colors:
+
+1. Using standard color names
+   - having only 300 color combinations.
+2. RGB values
+   - red green blue
+     Each color value has 256 shades.
+     ie 256*256*256\*100
+     rgb(0,0,0) - black
+     rgb(255,0,0)- red
+     rgb(0,255,0)- green
+     rgb(0,0,255)- blue
+     rgb(255,255,255)-white
+
+3.RGBa Value
+
+a (alpha)stands for blur or opicity.
+alpha has only 10 values ie 0.1 to 1.
+0 - means invisisble
+1 - means normal
+ie, the brightness is reduced.
+
+4. Hexa decimal values
+   2 types:
+
+   1. 3 digit hexadecimal
+      16*16*16
+      0123456789abcdef
+      #f00 -red
+      #0f0 - green 2. 6 digit hexadecimal
+      rrggbb
+      16*16*16*16*16\*16
+      #ff0000 = red
+      #0000ff = blue
+
+5. HSL - Hue Saturation Lightness
+
+### CSS Topography ########3
+
+    We are going to discuss some of the property:
+
+1. Font family - character desgin
+
+- check for google fonts
+
+2. font weight -> character weight - bold, lighter, normal, thinner, boder etc
+
+3. Font style -> Character will be in Italic
+   Italic, oblique,
+
+4. Font Variants -> small-caps, normal
+
+5. Text transformations -> data in uppercase or lowercase.
+
+6. Letter Spacing -> space between 2 character.
+
+7. Word Spacing-> space between 2 words.
+
+   Units for Dimensions:
+   px
+   cm
+   mm
+   rem //1 rem = 16px
+   em
+   %
+   vw - view wiedth
+   vh - view height
+   inch
+
+8. Line Height
+
+9. Text Alignment
+   center, right, left
+
+### Directions
+
+x axis (horizontal) and y axis(vertical)
+
+         left    centre      Right
+
+Top
+
+Middle
+
+Bottom
+
+Total 9 alignments are there in the web page:
+Top-left, top center, top right, Middle, left, middle center, middle right etc.
+
+#### Box Model
+
+![](../box%20model.PNG)
+Every element therre is a box model.
+Inside the element , we will be having - Content, padding, border
+Outside the element - margin
+
+width - is x axis
+height - y axis
+Content
+Padding - is transperant.
+margin: arg => apply to all four directions.
+margin: arg1 arg2 -> arg1 -> to top and bottom and arg2 -> left and right.
+margin: arg1 arg2 arg3 => arg1- top, arg2 - left & right, arg3-> bottom
+margin: arg1 arg2 arg3 arg4
+top left bottom right
+Border:
+border-width -px, %, em etc
+Border-style - solid, dotted, doubled, dashed, etc
+Border-color -
+Border-radiuse-> to make rounded edges
+Shorthand property for the border:
+-> border: width, style, color
+Margin - by default the margin is 8px for an element. - Margin should be given to the parent tag. - it is transperant
+Dimensions
+
+- Height and width
+
+### Display and Positioning in CSS
+
+Display - grids, flex, inline-grid, inline, block, inline-block etc.
+Position- Relative, aboslute, fixed, static and Sticky
+em vs rem
