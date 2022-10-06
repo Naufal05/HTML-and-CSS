@@ -172,7 +172,7 @@ Middle
 Bottom
 
 Total 9 alignments are there in the web page:
-Top-left, top center, top right, Middle, left, middle center, middle right etc.
+Top-left, top center, top right, Middle, left, middle center, middle right etc. 0.
 
 #### Box Model
 
@@ -207,3 +207,64 @@ Dimensions
 Display - grids, flex, inline-grid, inline, block, inline-block etc.
 Position- Relative, aboslute, fixed, static and Sticky
 em vs rem
+
+##### CSS Layouts and Debugging
+
+https://flexboxfroggy.com/
+
+Layout and content structuring.
+
+Agenda:
+
+1. Flex Box Layout
+
+   1. justify-content
+   2. align items
+   3. flex-grow
+   4. flex shirnk
+   5. flex basis
+   6. flex
+   7. flex-wrap
+   8. align-content
+   9. flex-direction
+   10. flex-flow
+
+2. Grid Layout
+3. Debugging in css
+
+Display: Flex
+flex-direction: column - horizontal to vertical
+
+# Justify content
+
+- center
+- start
+- end
+- space-between
+- space-around
+
+# Align- items - Vertical
+
+- for group
+
+# align -self - for one
+
+# flex-direction
+
+The frogs need to get in the same order as their lilypads using flex-direction. This CSS property defines the direction items are placed in the container, and accepts the following values:
+
+row: Items are placed the same as the text direction.
+row-reverse: Items are placed opposite to the text direction.
+column: Items are placed top to bottom.
+column-reverse: Items are placed bottom to top.
+
+# Order
+
+Sometimes reversing the row or column order of a container is not enough. In these cases, we can apply the order property to individual items. By default, items have a value of 0, but we can use this property to also set it to a positive or negative integer value (-2, -1, 0, 1, 2).
+by default orders are always 0
+
+# Flex Wrap
+
+nowrap: Every item is fit to a single line.
+wrap: Items wrap around to additional lines.
+wrap-reverse: Items wrap around to additional lines in reverse.
