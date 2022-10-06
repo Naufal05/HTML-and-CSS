@@ -1,0 +1,23 @@
+Breakpoints in bootstrap - X small, small, medium, large, Extra large, Extra extra Large
+
+Container in Bootstrap
+
+1. Fixed
+2. Fluid
+3. Responsive
+
+Grids using Bootstrap
+col-sm-1 => column small
+
+Components in Bootstrap
+
+1. Button Componenet
+2. button group
+3. cards
+4. Dropdown
+5. list groups
+6. Progress bars
+7. Navbars
+8. CArosel
+
+Note: Remember the classes **\***
