@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>DOM</title>
+  </head>
+  <body>
+    <h1>Alma Better</h1>
+    <div>
+      <h2 id="name">Cohort Satoshir</h2>
+      <h2 id="name">Wbe 3.0 Development Programm</h2>
+    </div>
+
+    <button onclick="changeText()">Change Text</button>
+  </body>
+  <script>
+    function changeText() {
+      var names = document.getElementsByTagName("h2");
+
+      console.log(names[0].innerText);
+      //   Object.keys(names).forEach((element) => {
+      //     let inner = document.getElementsByTagName("h2")[element].innerText;
+
+      //     console.log(inner);
+      //   });
+    }
+  </script>
+</html>
+<!-- Objects cannot be iterated.
+but using 'in' you can iterate in objects too
+    for(let a in arr){
+        console.log(a)
+    }
+-->
