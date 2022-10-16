@@ -1,0 +1,36 @@
+<html lang="en">
+  <head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    </script>
+    <script>
+        $(document).ready(function() {
+            //css
+            $('p').css('background-color', 'yellow');
+            //Add Class
+            $('p:nth-of-type(2)').addClass('yellowDiv');
+            $('p:nth-of-type(3)').addClass('impPrg');
+            //Toggle Class
+            $('p:nth-of-type(2)').toggleClass('yellowDiv');
+        })
+    </script>
+    <style>
+            .yellowDiv {
+                margin: 10px 0 0 0;
+                height: 50px;
+            }
+
+            .impPrg {
+                font-size: 16px;
+                font-weight: bold;
+            }
+    </style>
+  </head>
+  <body>
+    <h1>Demo: jQuery methods demo</h1>
+
+    <p>This is first paragraph.</p>
+    <p>This is second paragraph.</p>
+    <p>This is third paragraph.</p>
+  </body>
+</html>
