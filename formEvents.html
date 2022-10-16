@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        //Focus
+        $("#second").focus();
+
+        //Submit
+        $("form").submit(function (event) {
+          event.preventDefault(); // prevent the page from reloading
+          $(this).append("<p>Form Submitted</p>");
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <form>
+      First name:
+      <input id="first" type="text" name="FirstName" value="Mickey" /><br />
+      Last name:
+      <input id="second" type="text" name="LastName" value="Mouse" /><br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
