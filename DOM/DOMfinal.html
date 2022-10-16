@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JS DOM Demo</title>
+</head>
+<body>
+  <div>Hey AlmaBetter!</div>
+  <ul id="menu"></ul>
+  <input type="text" id="username" />
+  </br>
+   <a href="https://www.javascripttutorial.net" 
+      target="_blank" 
+      id="js">JavaScript Tutorial
+   </a>
+  </br>
+  <input type="button" value="Save" onclick="alert('I am Clicked!')">
+</br>
+  <input type="button" value="Submit" onclick="showAlert()">
+</br>
+  <div id="btn">Press</div>
+</br>
+<div id="div1">
+  say hello to div 1
+  <div id="div2">
+    say Hi to div 2
+  </div>
+  <div id="div3">
+    say Hi to div 3
+  </div>
+</div>
+<p id="para">Adding CSS<p>
+  
+ <ul id="menu1" class="main">
+   <li>Homepage</li>
+   <li>Services</li>
+   <li>About</li>
+   <li>Contact</li>
+ </ul>
+</body>
+<script>
+    //Create element
+let mySpan = document.createElement('span');
+//console.log(mySpan);
+mySpan.innerHTML = '<p>CreateElement example</p>';
+//console.log(mySpan);
+// add element into DOM
+document.body.appendChild(mySpan);
+
+let myDiv = document.createElement('div');
+let myText = document.createTextNode('hi my name is Kapil');
+myDiv.appendChild(myText);
+//console.log(myDiv);
+// add element into DOM
+document.body.appendChild(myDiv);
+
+function createMenuItem(name) {
+    let li = document.createElement('li');
+    li.textContent = name;
+    return li;
+}
+// get the ul#menu
+const menu = document.querySelector('#menu');
+
+menu.appendChild(createMenuItem('Home'));
+menu.appendChild(createMenuItem('Store'));
+menu.appendChild(createMenuItem('About Us'));
+menu.appendChild(createMenuItem('Logout'));
+
+// Remove an element from DOM
+
+menu.removeChild(menu.lastElementChild);
+
+// Modify attributes of elements
+// get attribute
+let inputElement = document.querySelector('#username');
+console.log(inputElement.type);
+// has attribute - boolean - true/false
+//console.log(inputElement.hasAttribute('id'));
+//console.log(inputElement.hasAttribute('name'));
+// set attribute
+inputElement.setAttribute('name','myInput');
+//console.log(inputElement);
+// remove attribute
+inputElement.removeAttribute('name');
+//console.log(inputElement);
+
+let anchorTag = document.querySelector('#js');
+console.log(anchorTag.target);
+// has attribute - boolean - true/false
+//console.log(anchorTag.hasAttribute('href'));
+//console.log(anchorTag.hasAttribute('type'));
+// set attribute
+anchorTag.setAttribute('name','myLink');
+//console.log(anchorTag);
+// remove attribute
+anchorTag.removeAttribute('name');
+//console.log(anchorTag);
+
+// Event listners
+function showAlert() {
+     alert('Clicked!');
+}
+
+let btn = document.querySelector('#btn');
+
+// adding an event listners
+btn.addEventListener('click',function(event) {
+    alert(event.type); // click
+},
+true); // useCapture - true/false(capturing/bubbling)(top to bottom/ bottom to top)
+
+// remove the event listener
+btn.removeEventListener('click', showAlert);
+
+// StopEventPropagtion
+StopEventPropagtion();
+
+let parentDiv = document.querySelector("#div1");
+let childDiv1 = document.querySelector("#div2");
+let childDiv2 = document.querySelector("#div3");
+
+parentDiv.addEventListener("click", function (event) {
+  alert("you clicked on div 1");
+}, true); 
+
+childDiv1.addEventListener("click", function (event) {
+  alert("you clicked on div 2");
+}, false); 
+
+childDiv2.addEventListener("click", function (event) {
+  alert("you clicked on div 3");
+}, false); 
+
+// adding styles to our elements
+let myPara = document.querySelector('#para'); 
+myPara.style.color = 'yellow';
+myPara.style.backgroundColor = 'blue';
+
+myPara.setAttribute("style","color:red");
+
+let myMenu1 = document.querySelector('#menu1'); 
+console.log(menu1.className);
+
+// add css classes
+menu1.classList.add('myColor');
+
+// remove css classes
+menu1.classList.remove('myColor');
+</script>
+</html>
